@@ -17,7 +17,7 @@ if(isset($_POST['envoi'])){
             $_SESSION['id'] = $recupUser->fetch()['id'];
             $_SESSION['pseudo'] = $recupUser->fetch()['pseudo'];
             $_SESSION['password'] = $recupUser->fetch()['password'];
-            header('Location: index.php');
+            header('Location: connected.html');
         } else {
             echo 'Identifiant ou mot de passe incorrect';
         }

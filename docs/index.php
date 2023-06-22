@@ -1,7 +1,5 @@
 <?php
-
 $bdd = new PDO('mysql:host=localhost;dbname=muklix', 'root', '');
-
 //si le formulaire est envoyé
 if(isset($_POST['envoi'])){
     //si les champs sont remplis
@@ -26,13 +24,7 @@ if(isset($_POST['envoi'])){
             //sinon on affiche un message d'erreur
             $erreur = 'Identifiant ou mot de passe incorrect';
     }
-}
-
-
-
-
-
-?>
+}?>
 
 
 <!DOCTYPE html>
